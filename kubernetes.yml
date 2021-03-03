@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sba-svc
+  labels:
+    app: sba-casestudy
+spec:
+  type: NodePort
+  ports:
+  - port: 5000
+    targetPort: 5000
+    nodePort: 32000
+  selector:
+    app: sba-casestudy
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sba-deployment
+  labels:
+    app: sba-casestudy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sba-casestudy
+  template:
+    metadata:
+      labels:
+        app: sba-casestudy
+    spec:
+      containers:
+      - name: sba-flask-app
+        image: spadevapps/sba.casestudy
+        ports:
+        - containerPort: 5000

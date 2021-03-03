@@ -1,0 +1,29 @@
+---
+- hosts: worker
+  remote_user: vagrant
+  become: yes
+  become_user: root
+  tasks:
+  - name: Install packages that allow apt to be used over HTTPS
+    apt:
+      name: "{{ packages }}"
+      state: present
+    vars:
+      packages:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg-agent
+      - software-properties-common
+  - name: microk8s delete
+    command: microk8s delete
+  #- name: sysctl
+  #  command: sysctl fs.protected_regular=0
+  - name: microk8s start
+    command: microk8s start
+  - name: wait for start
+    command: microk8s status --wait-ready
+  - name: Deployment
+    command: microk8s kubectl apply -f kubernetes.yml
+  - name: make executable
+    command: chmod +x kubernetes-cluster-information.sh

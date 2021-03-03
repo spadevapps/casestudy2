@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "peru/ubuntu-20.04-server-amd64"
+  config.vm.hostname = "vagrant"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -51,9 +52,10 @@ Vagrant.configure("2") do |config|
   #
    config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
-  #   vb.gui = true
+     vb.gui = false
   #
   #   # Customize the amount of memory on the VM:
+	 vb.name = "worker"
      vb.memory = "4096"
 	 vb.cpus = 3
    end
@@ -69,5 +71,6 @@ Vagrant.configure("2") do |config|
      apt install snapd -y 
 	 snap install microk8s --classic
 	 apt install net-tools -y
+	 apt-get install openssh-server -y
    SHELL
 end
