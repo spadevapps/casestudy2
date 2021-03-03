@@ -19,11 +19,15 @@
   #  command: microk8s delete
   #- name: sysctl
   #  command: sysctl fs.protected_regular=0
+  - name: get direcroty
+    shell: pwd
+    register: shellout
+  - debug: var=shellout.stdout
   - name: microk8s start
     command: microk8s start
   - name: wait for start
     command: microk8s status --wait-ready
   - name: Deployment
-    command: microk8s kubectl apply -f kubernetes.yml
+    command: microk8s kubectl apply -f ./kubernetes.yml
   - name: make executable
     command: chmod +x kubernetes-cluster-information.sh
