@@ -68,3 +68,12 @@ question
 - vagrant default hostname (went from vagrant to localhost)
 - ...
 
+
+Cool tricks
+-
+- pwd in ansible playbook
+	- shell out
+	-  debug
+
+- copy file to remote
+

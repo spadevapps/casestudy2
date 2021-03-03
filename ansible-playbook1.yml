@@ -33,5 +33,3 @@
     command: microk8s status --wait-ready
   - name: Deployment
     command: microk8s kubectl apply -f ./kubernetes.yml
-  - name: make executable
-    command: chmod +x kubernetes-cluster-information.sh
