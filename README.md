@@ -52,7 +52,10 @@ steps
 Challenges
 -
 - Jenkins user sshing (tried to change name of key and should not have) was still requiring password. 
-- ...
+- applying kubernetes on remote server issue "not a path"
+	- try copying it to remote server
+	- try cloning git on worker then running
+	- ansible galaxy?
 
 
 
