@@ -57,6 +57,17 @@ Challenges
 	- try cloning git on worker then running
 	- ansible galaxy?
 
+- microk8s
+	- reset
+		- muiltiple nodes running
+
+	- issue with status and start after reset
+	- had to manually remove microk8s
+		- snap remove microk8s
+
+	- had to reprovision 
+		- vagrant reload --provision
+
 
 
 
@@ -66,6 +77,7 @@ Challenges
 question
 -
 - vagrant default hostname (went from vagrant to localhost)
+- what happens if you apply a kubernetes yaml a second time when it is already running?
 - ...
 
 
@@ -77,3 +89,19 @@ Cool tricks
 
 - copy file to remote
 
+
+
+
+TODO
+-
+
+- rerun playbook, try to avoid deploying a second time
+	- pods ready but no running after second run of playbook
+- Documentation
+	- get pictures (i.e. casestudy1)
+	- make chart
+	- ...
+
+- elk
+	- install elkstack on master
+	- make ansibleplaybook to install metricbeat on worker
