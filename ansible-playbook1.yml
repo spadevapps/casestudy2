@@ -22,7 +22,6 @@
   - copy:
         src: /home/ansiblem/gitRepos/casestudy2/kubernetes.yml
         dest: /home/vagrant
-        force: no
   - name: get directory
     shell: pwd
     register: shellout

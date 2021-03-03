@@ -31,6 +31,6 @@ spec:
     spec:
       containers:
       - name: sba-flask-app
-        image: spadevapps/sba.casestudy
+        image: spadevapps/sbacasestudy2
         ports:
         - containerPort: 5000
