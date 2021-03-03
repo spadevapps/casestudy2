@@ -19,7 +19,11 @@
   #  command: microk8s delete
   #- name: sysctl
   #  command: sysctl fs.protected_regular=0
-  - name: get direcroty
+  - copy:
+        src: /home/ansiblem/gitRepos/casestudy2/kubernetes.yml
+        dest: /home/vagrant
+        force: no
+  - name: get directory
     shell: pwd
     register: shellout
   - debug: var=shellout.stdout
