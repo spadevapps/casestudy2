@@ -34,9 +34,13 @@ steps
 - add ssh key for jenkins user and sudo user from master to worker
 	- ssh keygen
 	- ssh-key-copy-id
+	- enable sudoless commands for jenkins and vagrant
 
 - ssh into worker to test
 - ansible ping worker to test
+- make jenkinsfile
+- make ansibleplaybook1
+- make jenkins pipeline {master}
 
 
 

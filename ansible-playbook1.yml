@@ -15,8 +15,8 @@
       - curl
       - gnupg-agent
       - software-properties-common
-  - name: microk8s delete
-    command: microk8s delete
+  #- name: microk8s delete
+  #  command: microk8s delete
   #- name: sysctl
   #  command: sysctl fs.protected_regular=0
   - name: microk8s start
