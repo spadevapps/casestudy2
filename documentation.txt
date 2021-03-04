@@ -1,0 +1,69 @@
+{} = variable, dependant on the name you set up
+$ = command in terminal
+* * = action not in terminal
+*** *** = multiline action not in terminal
+# = comment 
+
+
+CLIENT
+install openssh
+enable password w/o sudo #https://code-maven.com/enable-ansible-passwordless-sudo
+
+
+MASTER
+Key generation (done on master)
+$ssh-keygen
+$ssh-copy-id {clientUser}@{ClientMachine}
+$ssh {clientUser}@{ClientMachine}
+
+
+Configure host alias (done on master)
+$sudo nano /etc/hosts   
+*add client ip adress with alias*
+$ping {client alias} # to check alias works
+
+
+Configure ansible (done on master)
+$sudo apt-add-repository ppa:ansible/ansible
+$sudo apt update
+$sudo apt install ansible
+$sudo nano /etc/ansible/hosts
+
+***add 
+[servers]
+server1 ansible_host={client ip}
+
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3***
+
+$ansible-inventory --list -y
+$ansible all -m ping -u {clientUser}
+
+
+
+
+
+Ansible Playbooks
+$cd ~
+$git clone https://github.com/do-community/ansible-playbooks.git
+$cd ansible-playbooks
+$cd apache_ubuntu1804
+$nano vars/default.yml
+***
+{user}
+{host}
+***
+$ansible-playbook playbook.yml -l {ansibleHostAliaIn /etc/ansible/hosts file} -u {clientUser}
+
+
+
+
+
+
+
+
+
+
+
+
