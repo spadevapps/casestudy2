@@ -1,6 +1,6 @@
 Software and Components 
 -
-![Alt image](https://github.com/spadevapps/casestudy2/blob/master/flowchart.png)
+![Alt image](https://github.com/spadevapps/casestudy2/blob/master/flowchart.PNG)
 
 - 3 Machines 
 	- Metal
@@ -16,7 +16,7 @@ Software and Components
 	- Kubernetes (MicroK8s)
 	- Grafana 
 
-https://github.com/spadevapps/casestudy2/blob/master
+
 Metal
 - 
 Install Vagrant
@@ -63,33 +63,33 @@ Steps
 	-  starts microk8s
 	- copies kubernetes yaml file to microk8s
 	- applies yaml file to deploy flaskapp
-	![Alt text](https://github.com/spadevapps/casestudy2/blob/master/whatafeeling2.png)
+	![Alt text](https://github.com/spadevapps/casestudy2/blob/master/whatafeeling2.PNG)
 
 - make jenkins pipeline {master}
 	- checkout git
 	- run playbook
-![Alt text](https://github.com/spadevapps/casestudy2/blob/master/whatagoodfeeling3.png)
-![Alt text](https://github.com/spadevapps/casestudy2/blob/master/whatafeeling.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/whatagoodfeeling3.PNG)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/whatafeeling.PNG)
 
 - Set Up monitoring  monitoring 
 	- port forward Prometheus dashboard and Grafana dashboards
 
 - Add load to Flask app (ctrl+shift+r) and go back to view on monitoring 
 
-![Alt text](https://github.com/spadevapps/casestudy2/blob/master/namespaces1.png)
-![Alt text](https://github.com/spadevapps/casestudy2/blob/master/namespaces2.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/namespaces1.PNG)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/namespaces2.PNG)
 ![Alt text](https://github.com/spadevapps/casestudy2/blob/master/top.png)
-![Alt text](https://github.com/spadevapps/casestudy2/blob/master/cpuUsage.png)
-![Alt text](https://github.com/spadevapps/casestudy2/blob/master/memory.png)
-![Alt text](https://github.com/spadevapps/casestudy2/blob/master/network.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/cpuUsage.PNG)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/memory.PNG)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/network.PNG)
 
 Before activity 
 -
-![Alt text](https://github.com/spadevapps/casestudy2/blob/master/beforeactt.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/beforeactt.PNG)
 
 After activity
 -
-![Alt text](https://github.com/spadevapps/casestudy2/blob/master/afteract.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/afteract.PNG)
 
 
 Challenges
