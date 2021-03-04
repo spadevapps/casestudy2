@@ -1,6 +1,6 @@
 Software and Components 
 -
-![Alt image](./flowchart.png)
+![Alt image](https://github.com/spadevapps/casestudy2/blob/master/flowchart.png)
 
 - 3 Machines 
 	- Metal
@@ -16,7 +16,7 @@ Software and Components
 	- Kubernetes (MicroK8s)
 	- Grafana 
 
-
+https://github.com/spadevapps/casestudy2/blob/master
 Metal
 - 
 Install Vagrant
@@ -63,33 +63,33 @@ Steps
 	-  starts microk8s
 	- copies kubernetes yaml file to microk8s
 	- applies yaml file to deploy flaskapp
-	![Alt text](./whatafeeling2.png)
+	![Alt text](https://github.com/spadevapps/casestudy2/blob/master/whatafeeling2.png)
 
 - make jenkins pipeline {master}
 	- checkout git
 	- run playbook
-![Alt text](./whatagoodfeeling3.png)
-![Alt text](./whatafeeling.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/whatagoodfeeling3.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/whatafeeling.png)
 
 - Set Up monitoring  monitoring 
 	- port forward Prometheus dashboard and Grafana dashboards
 
 - Add load to Flask app (ctrl+shift+r) and go back to view on monitoring 
 
-![Alt text](./namespaces1.png)
-![Alt text](./namespaces2.png)
-![Alt text](./top.png)
-![Alt text](./cpuUsage.png)
-![Alt text](./memory.png)
-![Alt text](./network.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/namespaces1.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/namespaces2.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/top.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/cpuUsage.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/memory.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/network.png)
 
 Before activity 
 -
-![Alt text](./beforeactt.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/beforeactt.png)
 
 After activity
 -
-![Alt text](./afteract.png)
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/afteract.png)
 
 
 Challenges
@@ -100,7 +100,7 @@ Challenges
 	- try cloning git on worker then running
 	- ansible galaxy?
 
-![Alt image](./error.png)
+![Alt image](https://github.com/spadevapps/casestudy2/blob/master/error.png)
 
 - microk8s
 	- reset
