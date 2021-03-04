@@ -90,7 +90,7 @@ Before activity
 After activity
 -
 ![Alt text](https://github.com/spadevapps/casestudy2/blob/master/afteract.PNG)
-
+![Alt text](https://github.com/spadevapps/casestudy2/blob/master/stress.PNG)
 
 Challenges
 -
